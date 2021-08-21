@@ -14,6 +14,11 @@ echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] 
 tee -a /etc/apt/sources.list.d/signal-xenial.list && \
 add-pkg signal-desktop
 
+# Generate and install favicons.
+RUN \
+    APP_ICON_URL=https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Signal-Logo.svg/600px-Signal-Logo.svg.png && \
+    install_app_icon.sh "$APP_ICON_URL"
+
 # Copy the start script.
 COPY startapp.sh /startapp.sh
 
