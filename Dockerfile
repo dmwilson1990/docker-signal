@@ -5,6 +5,9 @@
 # Pull base image.
 FROM dmwilson1990/docker-baseimage-gui-cac:debian-10
 
+# Define working directory.
+WORKDIR /tmp
+
 # Install signal.
 RUN \
 add-pkg wget gnupg libx11-xcb1 libatk1.0-0 libatk-bridge2.0-0 libgtk-3-0 libgbm1 && \
