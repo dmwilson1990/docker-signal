@@ -3,7 +3,7 @@
 # Dockerfile used to generate this image.
 
 # Pull base image.
-FROM dmwilson1990/docker-baseimage-gui-cac:debian-10
+FROM jlesage/docker-baseimage-gui:debian-10
 
 # Define working directory.
 WORKDIR /tmp
