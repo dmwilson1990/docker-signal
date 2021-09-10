@@ -3,7 +3,7 @@
 # Dockerfile used to generate this image.
 
 # Pull base image.
-FROM jlesage/baseimage-gui:debian-10
+FROM jlesage/baseimage-gui:ubuntu-18.04
 
 # Define working directory.
 WORKDIR /tmp
