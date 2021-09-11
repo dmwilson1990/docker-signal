@@ -1,5 +1,5 @@
 # Docker container for Signal
-[![Docker Automated build](https://img.shields.io/docker/automated/dmwilson1990/docker-baseimage-gui-cac.svg)](https://hub.docker.com/r/dmwilson1990/docker-baseimage-gui-cac/) [![Build Status](https://travis-ci.com/dmwilson1990/docker-baseimage-gui-cac.svg?branch=master)](https://travis-ci.com/dmwilson1990/docker-baseimage-gui-cac)
+[![Docker Automated build](https://img.shields.io/docker/automated/dmwilson1990/docker-signal.svg)](https://hub.docker.com/r/dmwilson1990/docker-signal/)
 
 This is a Docker container for [Signal](https://signal.org/).
 
@@ -91,8 +91,6 @@ of this parameter has the format `<VARIABLE_NAME>=<VALUE>`.
 |`DISPLAY_WIDTH`| Width (in pixels) of the application's window. | `1280` |
 |`DISPLAY_HEIGHT`| Height (in pixels) of the application's window. | `768` |
 |`SECURE_CONNECTION`| When set to `1`, an encrypted connection is used to access the application's GUI (either via a web browser or VNC client).  See the [Security](#security) section for more details. | `0` |
-|`CAC_AUTH`| When set to `1`, a DoD CAC autenticated connection is used to access the application's GUI (via a web browser only).| `0` |
-|`CAC_Common_Name`| Required for use with CAC_Auth. Set to the Common Name of your CAC (Format: LAST.FIRST.MIDDLE.DoDID)| (unset) |
 |`VNC_PASSWORD`| Password needed to connect to the application's GUI.  See the [VNC Password](#vnc-password) section for more details. | (unset) |
 |`X11VNC_EXTRA_OPTS`| Extra options to pass to the x11vnc server running in the Docker container.  **WARNING**: For advanced users. Do not use unless you know what you are doing. | (unset) |
 
