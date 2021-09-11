@@ -10,6 +10,9 @@ FROM jlesage/baseimage-gui:ubuntu-18.04
 # Define working directory.
 WORKDIR /tmp
 
+#Install Updates
+RUN apt-get update && apt-get -y upgrade
+
 # Install signal.
 RUN \
 add-pkg wget gnupg libx11-xcb1 libatk1.0-0 libatk-bridge2.0-0 libgtk-3-0 libgbm1 && \
