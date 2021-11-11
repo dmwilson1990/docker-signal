@@ -20,7 +20,7 @@ wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signa
 mv signal-desktop-keyring.gpg /usr/share/keyrings/ && \
 echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' | \
 tee -a /etc/apt/sources.list.d/signal-xenial.list && \
-add-pkg signal-desktop=5.23.0
+add-pkg signal-desktop=5.23.1
 
 # Generate and install favicons.
 RUN \
